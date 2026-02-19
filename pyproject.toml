@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=69.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clawdbot-internship-automation"
+version = "0.1.0"
+description = "Automate Handshake SWE internship discovery and applications with resume + QA support."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "openai>=1.52.0",
+  "playwright>=1.49.0",
+  "PyYAML>=6.0.2",
+  "reportlab>=4.2.5",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.4",
+  "ruff>=0.8.2",
+]
+
+[project.scripts]
+clawdbot-internship = "clawdbot_internship_automation.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
