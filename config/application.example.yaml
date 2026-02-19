@@ -1,0 +1,50 @@
+handshake:
+  email: "YOUR_HANDSHAKE_EMAIL"
+  password: "YOUR_HANDSHAKE_PASSWORD"
+  login_url: "https://app.joinhandshake.com/login"
+  jobs_url: "https://app.joinhandshake.com/stu/postings"
+
+browser:
+  headless: false
+  slow_mo_ms: 120
+  timeout_ms: 25000
+
+filters:
+  search_query: "software engineer intern"
+  include_keywords:
+    - "software"
+    - "engineer"
+    - "intern"
+  exclude_keywords:
+    - "senior"
+    - "staff"
+    - "principal"
+  preferred_locations:
+    - "remote"
+  remote_only: false
+  max_discovered_jobs: 150
+
+application:
+  dry_run: true
+  auto_submit: false
+  max_applications: 25
+  pause_between_apps_sec: 2
+  save_html_on_failure: true
+
+resume:
+  mode: "markdown_template"
+  base_resume_path: "artifacts/base_resume.txt"
+  template_path: "config/resume_template.md"
+  output_dir: "artifacts/resumes"
+
+llm:
+  enabled: true
+  provider: "openai"
+  api_key_env: "OPENAI_API_KEY"
+  model: "gpt-4o-mini"
+  temperature: 0.2
+
+qa:
+  defaults_path: "config/qa_defaults.yaml"
+  max_answer_chars: 1000
+

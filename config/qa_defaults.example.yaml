@@ -1,0 +1,50 @@
+defaults:
+  full_name: "Your Name"
+  email: "you@example.com"
+  phone: "+1-555-555-5555"
+  linkedin: "https://www.linkedin.com/in/yourname"
+  github: "https://github.com/yourname"
+  portfolio: "https://yourportfolio.dev"
+  work_authorization_us: "Yes"
+  sponsorship_required: "No"
+  willing_to_relocate: "Yes"
+  graduation_month_year: "May 2027"
+  gpa: "3.8"
+  years_experience: "2"
+
+prompt_aliases:
+  - key: "work_authorization_us"
+    patterns:
+      - "authorized to work"
+      - "legally authorized"
+      - "work authorization"
+  - key: "sponsorship_required"
+    patterns:
+      - "require sponsorship"
+      - "need visa sponsorship"
+      - "future sponsorship"
+  - key: "willing_to_relocate"
+    patterns:
+      - "willing to relocate"
+      - "open to relocation"
+  - key: "graduation_month_year"
+    patterns:
+      - "graduation"
+      - "expected grad"
+  - key: "gpa"
+    patterns:
+      - "gpa"
+  - key: "years_experience"
+    patterns:
+      - "years of experience"
+      - "how many years"
+  - key: "github"
+    patterns:
+      - "github"
+  - key: "linkedin"
+    patterns:
+      - "linkedin"
+  - key: "portfolio"
+    patterns:
+      - "portfolio"
+
