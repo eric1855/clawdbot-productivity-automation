@@ -13,3 +13,5 @@ artifacts/*.log
 artifacts/failures/
 config/application.yaml
 config/qa_defaults.yaml
+config/resume_template.md
+*.egg-info/
